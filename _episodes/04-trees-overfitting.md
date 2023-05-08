@@ -1,6 +1,6 @@
 ---
 title: "Decision Trees, Random Forests, and Overfitting"
-duration: 40
+duration: 35
 questions:
 - How do decision trees and random forests make decisions?
 objectives:
@@ -140,17 +140,6 @@ In biology, it is common to have this type of __imbalanced training set__ with m
 >
 > Without changing any hyperparameter settings, look at the Data Plot.
 {: .checklist}
-
-> ## Conceptual Questions
->
-> What is the decision boundary?
->
-{: .challenge}
-
-> ## Solution
->
-> If we look at the Data Plot, the decision boundaries are rectangular.
-{: .solution}
 
 > ## Question
 >
@@ -297,9 +286,5 @@ The classifier probably overfit.
 > You are interested to see which features are most important for predicting a species' fate.
 >
 {: .challenge}
-
-###  Application in biology
-
-[PgpRules: a decision tree based prediction server for P-glycoprotein substrates and inhibitors](https://doi.org/10.1093/bioinformatics/btz213)
 
 {% include links.md %}

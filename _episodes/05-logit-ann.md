@@ -1,6 +1,6 @@
 ---
 title: "Logistic Regression, Artificial Neural Networks, and Linear Separability"
-duration: 45
+duration: 35
 questions:
 - What is linear separability?
 objectives:
@@ -111,7 +111,7 @@ Press the play button to automatically train the weights to minimize the number 
 > This dataset is engineered specifically for the logistic regression classifier.
 {: .checklist}
 
-#### Linear separability
+#### Hyperparameters
 
 In this workshop, not all of the hyperparameters in the ml4bio software will be discussed.
 For those hyperparameters that we don't cover, we will use the default settings.
@@ -126,7 +126,6 @@ For those hyperparameters that we don't cover, we will use the default settings.
 > ## Questions to consider - Poll
 >
 > Look at the Data Plot.
-> What do you notice?
 >
 > Is the data linearly separable?  
 {: .challenge}
@@ -236,83 +235,5 @@ This neural network still consists of hidden layers combined with functions, but
 > It is likely that a combination of genes is required for a mole to be cancerous. 
 >
 {: .challenge}
-
-### Step 3 Test Regularization Strategies
-
-#### Regularization
-
-Regularization is used to make sure that our model pays attention only to the important features to avoid overfitting. 
-Previously, we talked about the positive and negative effect a feature and its weight can have on the outcome probability.
-As with decision trees and random forests, logistic regression can overfit.
-If we have a complex model with many features, our model might have high variance.
-Regularization can help us decide how many features are too many or too few.
-Regularization does not make models fit better on the training data, but it helps with generalizing the pattern to new data.
-
-> ## Definition
->
-> Regularization - approaches to make machine learning models less complex in order to reduce overfitting.
->
-> Penalty - a regularization strategy that reduces the importance of certain features by adding a cost to the feature weights, which makes the feature weights smaller.
-{: .callout}
-
-#### Regularization hyperparameters in the ml4bio software
-
-The most important hyperparameters in the ml4bio software are:
-- The regularization penalty can be L1 or L2.
-Although it is possible to train a logistic regression classifier without regularization, regularization is always used in the ml4bio software.
-This follows best practices in real applications.
-- C is the inverse of the regularization strength.
-Smaller values of C mean stronger regularization (higher penalties, therefore lower feature weights).
-
-> ## Software
->
-> Load the `simulated_t_cell/simulated_t_cells_1.csv` data set into the software.
->
-> This data set is engineered specifically to demonstrate the effects of regularization.
-{: .checklist}
-
-
-#### L1 regularization
-
-L1 regularization is also known as Lasso reguralization.
-
-Recall that $x_1, x_2, ..., x_n$ are the features, and $w_0, w_1, ..., w_n$ are the feature weights.
-Without regularization, the classifier might fit the training data perfectly, giving certain values to each weight that would lead to overfitting. 
-This model could be very complex and it would generalize poorly on the future data.
-
-L1 regularization prevents overfitting by adding a penalty term and mathematically shrinking (decreasing) some weights.
-L1 could shrink the weights of less important features all the way to 0, effectively deleting those weights. 
-The corresponding features are then not used at all to make predictions on new data.
-
-#### L2 Penalty
-
-L2 regularization is also known as ridge reguralization.
-L2 reguralization makes the weights of less important features to be small values.
-Unlike L1 regularization, L2 regularization does not necessarily shrink the weights to 0.
-The higher the value of C, the smaller the feature weights will be.
-
-Recall: C is the inverse of regularization strength.
-Smaller values of C will shrink more weights and use fewer features to make the prediction.
-
-> ## Software
->
-> First, set penalty to ‘L1’.
-> Experiment with C = 0.001, 0.07, 0.1, 0.25, 1.
->
-> Next, set penalty to ‘L2’.
-> Experiment with the same values of C.
-{: .checklist}
-
-> ## Questions
->
-> What do you observe in the Data Plot? For each value of C, which of the two features seem to influence the decision boundary?
->
-> What is the difference between L1 and L2 regularization? (Hint: consider C = 0.07)
->
-> How does the decision boundary change as C increases?
-{: .challenge}
-
-L1 can regularize such that one feature's weight goes to 0.
-We can see the classifier ignores that feature in its decision boundary.
 
 {% include links.md %}
