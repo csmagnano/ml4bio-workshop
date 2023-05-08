@@ -315,9 +315,4 @@ Smaller values of C will shrink more weights and use fewer features to make the 
 L1 can regularize such that one feature's weight goes to 0.
 We can see the classifier ignores that feature in its decision boundary.
 
-> ## Break
-> Let's take a short break. 
->
-{: .discussion}
-
 {% include links.md %}

@@ -2,6 +2,8 @@
 [![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/carpentries-incubator/ml4bio-workshop/gh-pages?urlpath=tree/illustration.ipynb)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6478122.svg)](https://doi.org/10.5281/zenodo.6478122)
 
+**This is a shortened version of the original [ML4Bio](https://carpentries-incubator.github.io/ml4bio-workshop/) workshop.**
+
 Recent advances in high-throughput technologies have led to rapid growth in the amount of omics data.
 These massive datasets, accompanied by numerous data points enriched over the past decades, are extremely valuable in the discovery of complex biological structures, but also present challenges in various aspects of data analysis.
 This workshop introduces biologists to concepts in machine learning, a powerful set of models for drawing inference from data.

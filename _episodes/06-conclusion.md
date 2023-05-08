@@ -1,6 +1,6 @@
 ---
 title: "Conclusion and next steps"
-duration: 45
+duration: 10
 questions:
 - Where can you learn more about machine learning?
 objectives:
@@ -26,15 +26,6 @@ Some of the questions to consider when choosing a model are:
 * What types are the features (numeric, categorical, image, text)?
 * What might the decision boundary look like? Is the data likely linearly separable?
 * How noisy is the data?
-
-### Reviewing a published workflow
-
-We will review a machine learning workflow from a publication to see how well you can identify the major elements that were presented during this workshop.
-
-### Post-workshop survey
-
-We greatly appreciate your feedback to help improve this workshop.
-Please take 10 minutes to complete the post-workshop survey using the link you were provided.
 
 ### Additional resources
 
