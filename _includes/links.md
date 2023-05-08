@@ -17,7 +17,7 @@
 [episode-evaluating-model]: {{ relative_root_path }}{% link _episodes/03-evaluating-model.md %}
 [episode-trees-overfitting]: {{ relative_root_path }}{% link _episodes/04-trees-overfitting.md %}
 [episode-logit-ann]: {{ relative_root_path }}{% link _episodes/05-logit-ann.md %}
-[episode-conclusion]: {{ relative_root_path }}{% link _episodes/07-conclusion.md %}
+[episode-conclusion]: {{ relative_root_path }}{% link _episodes/06-conclusion.md %}
 [github-importer]: https://import.github.com/
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/

@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-duration: 35
+duration: 20
 questions:
 - What is machine learning?
 objectives:
